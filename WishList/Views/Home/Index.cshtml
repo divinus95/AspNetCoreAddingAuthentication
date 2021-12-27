@@ -7,10 +7,10 @@
     <a asp-action="Index" asp-controller="Item">View wishlist</a>
 </div>
 
-@if (signInManager.IsSignedIn(User))
+@if(signInManager.IsSignedIn(User))
 {
     <div>
-        <form asp-action="Logout" asp-controller="Account method="post">
+        <form asp-action="Logout" asp-controller="Account" method="post">
             <button type="submit">Logout </button>
         </form>
     </div>
